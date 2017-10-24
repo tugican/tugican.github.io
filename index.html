@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="design.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/kaydirma.js"></script>
+<link href="tab/css/style.css" rel='stylesheet' type='text/css' />
+
 </head>
 <body>
 
@@ -87,8 +89,8 @@
 			<span class="duyr">
 				<ul>
 					<li>
-						<a href="tepe-cagri-merkezinden-5000-m2lik-yeni-lokasyon-atagi/">
-							Tepe Çağrı Merkezi’nden  5000 M2’lik Yeni Lokasyon Atağı
+						<a href="#">
+							Test
 						</a>
 					</li>
 					<li>
@@ -107,7 +109,72 @@
 				<iframe src="havadurumu/index.html" style=""></iframe>
 	</div>
 	<div class="sagtab">
-		<?php include("tab/index.html"); ?>
+
+
+	<style>
+#verticalTab ul li i { font-size:20px; }
+</style>
+<div class="infom2" style="background:white;">
+				<div id="verticalTab" class="resp-vtabs" style="display: block; width: 100%; margin: 0px;background:white;"><!-- start vertical Tabs-->
+					<ul class="resp-tabs-list" style="float:right;">
+						<li class="resp-tab-item"><span><i class="fa fa-usd" aria-hidden="true"></i> </span></li>
+						<li class="resp-tab-item"><span><i class="fa fa-cutlery" aria-hidden="true"></i> </span></li>
+						<li class="resp-tab-item"><span><i class="fa fa-phone" aria-hidden="true"></i> </span></li>
+						<li class="resp-tab-item"><span><img src="images/password.png" alt=""/> </span></li>
+					</ul>
+					<div class="resp-tabs-container" style="background:#373d42;color:white;padding:10px;">
+						<span class="resp-arrow"></span><i class="icon_1"></i>
+						<div class="new_posts resp-tab-content" style="width:100%;">
+							Para Piyasaları
+						</div>
+						<span class="resp-arrow"></span><i class="icon_2"></i>
+						<div class="new_posts resp-tab-content">
+							Yemek Listesi
+						</div>
+						<span class="resp-arrow"></span><i class="icon_3"></i>
+						<div class="new_posts resp-tab-content">
+							Telefon Defteri
+						</div>
+						<span class="resp-arrow"></span><i class="icon_4"></i>
+						<div class="new_posts resp-tab-content">
+							Üyelik İşlemleri
+						</div>
+
+					<div class="clear"></div>
+				</div>
+				<script src="js/easyResponsiveTabs.js"></script>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							$('#horizontalTab').easyResponsiveTabs({
+								type: 'default', //Types: default, vertical, accordion
+								width: 'auto', //auto or any width like 600px
+								fit: true,   // 100% fit in a container
+								closed: 'accordion', // Start closed if in accordion view
+								activate: function(event) { // Callback function if tab is switched
+									var $tab = $(this);
+									var $info = $('#tabInfo');
+									var $name = $('span', $info);
+
+									$name.text($tab.text());
+
+									$info.show();
+								}
+							});
+
+							$('#verticalTab').easyResponsiveTabs({
+								type: 'vertical',
+								width: 'auto',
+								fit: true
+							});
+						});
+					</script>
+</div>
+<div class="clearfix"> </div>
+</div>
+
+
+
+
 	</div>
 	<div class="sol1" style="position:relative;top:30px;">
 
@@ -528,7 +595,7 @@
 				<ul>
 					<li>
 						<div class="fgorsel">
-							<img src="">
+							<img src="images/Custom-Icon-Design-Mono-Business-2-News (1).ico">
 						</div>
 						<div class="hview">
 						Haber Başlık Metni Gelecek </br>
@@ -538,7 +605,7 @@
 					</li>
 					<li>
 						<div class="fgorsel">
-							<img src="">
+							<img src="images/Custom-Icon-Design-Mono-Business-2-News (1).ico">
 						</div>
 						<div class="hview">
 						Haber Başlık Metni Gelecek </br>
@@ -548,7 +615,7 @@
 					</li>
 					<li>
 						<div class="fgorsel">
-							<img src="">
+							<img src="images/Custom-Icon-Design-Mono-Business-2-News (1).ico">
 						</div>
 						<div class="hview">
 						Haber Başlık Metni Gelecek </br>
@@ -558,7 +625,7 @@
 					</li>
 					<li>
 						<div class="fgorsel">
-							<img src="">
+							<img src="images/Custom-Icon-Design-Mono-Business-2-News (1).ico">
 						</div>
 						<div class="hview">
 						Haber Başlık Metni Gelecek </br>
